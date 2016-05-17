@@ -1,5 +1,7 @@
 # DbVerge
 A Laravel package to show the first or the last row data of DB in command line.
+(This is for Laravel 5. [For Laravel 4.2](https://github.com/SUKOHI/DbVerge/tree/1.0))
+
 # Installation
 
 Execute composer command.
