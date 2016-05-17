@@ -12,7 +12,7 @@ Register the service provider in app.php
 
     'providers' => [
         ...Others...,  
-        Sukohi\DbVerge\DbVergeServiceProvider::class,
+        'Sukohi\DbVerge\DbVergeServiceProvider',
     ]
 
 Now you are able to execute `php artisan db:verge` command.
