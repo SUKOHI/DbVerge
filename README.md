@@ -1,12 +1,12 @@
 # DbVerge
 A Laravel package to show the first or the last row data of DB in command line.  
-(This is for Laravel 5. [For Laravel 4.2](https://github.com/SUKOHI/DbVerge/tree/1.0))
+(This is for Laravel 4.2. [For Laravel 5+](https://github.com/SUKOHI/DbVerge))
 
 # Installation
 
 Execute composer command.
 
-    composer require sukohi/db-verge:2.*
+    composer require sukohi/db-verge:1.*
 
 Register the service provider in app.php
 
