@@ -42,10 +42,12 @@ class DbVerge extends Command {
 		$limit = $this->option('limit');
 		$tables = \DB::select('SHOW TABLES');
 		$table_prefix = \DB::getTablePrefix();
+		$db_name = \DB::getDatabaseName();
 
 		foreach ($tables as $table) {
 
-			$table_in_laravel = $table->Tables_in_laravel;
+			$table_property = 'Tables_in_'. $db_name;
+			$table_in_laravel = $table->{$table_property};
 			$table_name = preg_replace('|^'. $table_prefix .'|', '', $table_in_laravel);
 			$column_names = $this->columnNames($table_in_laravel);
 
